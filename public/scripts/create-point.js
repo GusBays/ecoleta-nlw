@@ -33,7 +33,7 @@ function getCities(event) {
     .then( cities => {
 
         for( const city of cities ) {
-            citySelect.innerHTML += `<option value=${city.nome}>${city.nome}</option> `
+            citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option> `
         } 
 
         citySelect.disabled = false
@@ -65,7 +65,7 @@ function handleSelectedItem(event) {
 
     const itemId = itemLi.dataset.id
 
-    //verificar se existem ítens selecionados, se sim pegar os ítens selecionados
+    //verificar se existem itens selecionados, se sim pegar os ítens selecionados
 
     const alreadySelected = selectedItems.findIndex( item => {
         const itemFound = item == itemId //isso será true ou false

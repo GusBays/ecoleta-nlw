@@ -41,7 +41,7 @@ server.get("/create-point", (req, res) => {
 server.post("/savepoint", (req, res) => {
     
     //req.body: o corpo do formulário
-    // console.log(req.body)
+    console.log(req.body)
 
     //inserir dados no banco de dados
     const query = `
